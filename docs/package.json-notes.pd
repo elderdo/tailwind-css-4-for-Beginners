@@ -1,0 +1,28 @@
+# Package.json Reference Guide
+
+This file explains what each line in your `package.json` file does.
+
+## Project Identity & Metadata
+* **"name": "basics"** — The name of your project. It must always be lowercase and cannot contain spaces.
+* **"version": "1.0.0"** — The current version of your project. `1.0.0` is the standard starting version for a new app.
+* **"description": ""** — A short summary of what this project does (currently empty).
+* **"main": "index.js"** — The main entry point file for your JavaScript. Vite automatically manages this behind the scenes, so you won't need to change it.
+* **"keywords": []** — Tags or search terms used if you were to publish this package publicly on the npm registry.
+* **"author": ""** — Your name or the creator's name goes here.
+* **"license": "ISC"** — The open-source license code for your project. `ISC` is a standard, permissive default.
+
+## Environment Settings
+* **"type": "commonjs"** — Tells Node.js to use the traditional JavaScript module system (`require`/`module.exports`) on the backend. 
+
+## Automated Scripts ("scripts")
+The scripts block contains shortcut commands you can trigger in your terminal using `npm run <script-name>` (or `npm start` for the start script).
+
+* **"test"** — A default script created by npm. It just prints an error message if you try to run `npm test`.
+* **"start"** — Runs the `vite` command. Typing `npm start` in your terminal will spin up your local live-reloading server.
+* **"build.css"** — Runs the Tailwind CSS compiler. 
+  * `-i ./src/input.css` points to your raw CSS file where your Tailwind rules live. 
+  * `-o ./src/ch01/output.css` tells Tailwind where to save the clean, compiled CSS that your HTML reads.
+  * `--watch` keeps the process open in your terminal, automatically re-saving the file every time you change a Tailwind class.
+
+## Project Dependencies ("devDependencies")
+* **"vite": "^8.3.0"** — Lists the external tools your project needs *only* while you are actively writing code. This shows Vite is installed along with its specific version number.
