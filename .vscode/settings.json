@@ -1,3 +1,23 @@
 {
-  "cSpell.words": ["vite"]
+  "cSpell.words": ["vite"],
+  "tailwindCSS.emmetCompletions": false,
+  "tailwindCSS.suggestions.classNames": false,
+  "tailwindCSS.suggestions.frontMatter": false,
+  "html.suggest.html5": false,
+  "emmet.showExpandedAbbreviation": "never",
+  "emmet.showSuggestionsAsSnippets": false,
+  "editor.inlineSuggest.enabled": false,
+  "editor.quickSuggestions": {
+    "other": "off",
+    "comments": "off",
+    "strings": "off"
+  },
+  "[html]": {
+    "editor.quickSuggestions": {
+      "other": "off",
+      "comments": "off",
+      "strings": "off"
+    },
+    "editor.suggestOnTriggerCharacters": false
+  }
 }
